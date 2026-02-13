@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "primary font";
+  src: url(fa-solid-900.woff2);
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+  height: 20vh;
+  /* position: fixed; */
+}
+
+.header-logo {
+  width: 120px;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+    color: rgb(29, 25, 25);
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: red
+}
+
+.visit-store {
+  padding: 14px 24px;
+  background-color: white;
+  border-radius: 16px solid green;
+  font-weight: bold;
+  color: rgb(40, 34, 34);
+  transition: all 0.2s ease-in-out;
+}
+
+.visit-store:hover {
+  background-color: linear-gradient(160deg, #6c1eb2 #d14fa0);
+  color: red;
+}
+
+.knowledge-base-link i {
+  transition: rotate 0.2s ease-in-out;
+}
+
+.knowledge-base-link:hover i {
+  rotate: 180deg;
+  
+}
+
+.knowledge-base-link {
+  position: relative;
+}
+
+.knowledge-base-link:hover .knowledge-base-container {
+  display: block;
+}
+
+.knowledge-base-container {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border: 2px solid blue;
+  border: 8px;
+  background-color: greenyellow;
+  display: none;
+  top: 18px;
+}
+
+.video-contianer{
+  position: relative;
+  height: 100vh;
+}
+
+video{
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  z-index: -9999;
+}
