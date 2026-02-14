@@ -52,7 +52,7 @@ nav a:hover {
 .visit-store {
   padding: 14px 24px;
   background-color: white;
-  border-radius: 16px solid green;
+  border-radius: 16px;
   font-weight: bold;
   color: rgb(40, 34, 34);
   transition: all 0.2s ease-in-out;
@@ -103,4 +103,50 @@ video{
   position: absolute;
   top: 0;
   z-index: -9999;
+}
+
+main {
+  height: 76vh;
+  padding: 0 6vw;
+  box-shadow: inset 0px -120px 60px -20px white;
+}
+
+main h1 {
+  padding-top: 100px;
+  font-size: 40px;
+  width: 300px;
+  color: rgb(50, 36, 36);
+}
+
+main p {
+  padding-top: 10px;
+  opacity: 0.7;
+}
+
+section {
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-container div {
+  background-color: #030930;
+  padding: 16px;
+  border-radius: 50px;
+  color: white;
+}
+.search-container input {
+  background-color: #030930;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.search-container input ::placeholder {
+  font-weight: bold;
+  color: white;
 }
